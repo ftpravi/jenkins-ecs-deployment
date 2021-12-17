@@ -1,8 +1,8 @@
 FROM nginx
 MAINTAINER Mahmoud Gamal <mhmoudgmal.89@gmail.com>
 
-COPY dist/index.html /usr/share/nginx/html
-COPY dist/* /usr/share/nginx/html/
+# COPY dist/index.html /usr/share/nginx/html
+# COPY dist/* /usr/share/nginx/html/
 
 # NOTE
 # copying (crt & key) files from the build server directory to avoid including them in github repo.
@@ -13,4 +13,4 @@ COPY dist/* /usr/share/nginx/html/
 
 # ADD nginx /tmp/nginx
 
-RUN cat /tmp/nginx/sites-enabled/production > /etc/nginx/conf.d/default.conf
+# RUN cat /tmp/nginx/sites-enabled/production > /etc/nginx/conf.d/default.conf
