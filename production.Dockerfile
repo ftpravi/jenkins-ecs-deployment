@@ -11,6 +11,6 @@ COPY dist/* /usr/share/nginx/html/
 # COPY certs/mydomain.crt /etc/ssl/certs
 # COPY certs/mydomain.key /etc/ssl/private
 
-ADD nginx /tmp/nginx
+# ADD nginx /tmp/nginx
 
 RUN cat /tmp/nginx/sites-enabled/production > /etc/nginx/conf.d/default.conf
